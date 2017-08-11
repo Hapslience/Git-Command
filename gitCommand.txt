@@ -1,0 +1,25 @@
+git command 
+
+pwd 显示当前目录
+
+
+git初始化
+git init // 初始化仓库
+git add <file>
+git commit -m "note" //提交修改，其中 -m "note" 是写注释
+
+git status //查看命令结果，掌握当前仓库的状态
+git diff  // 查看做了什么修改，和之前版本有什么不同
+
+版本回退
+git log //查看所有的版本
+git log --pretty=online // 查看所有的版本 在一行显示
+
+git reset --hard head^ // 回到上一个版本 head^^两个版本 head~100前100个版本
+
+回退了之后，想回去，那么在 git log... 中找到后面那个版本号
+git rest --hard 版本号
+
+
+回退到哪个版本之后，第二天后悔了，怎么办
+git reflog 能够查到所有的id 然后返回
