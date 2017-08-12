@@ -25,3 +25,4 @@ git rest --hard 版本号
 git reflog 能够查到所有的id 然后返回
 
 何为暂存区，何为工作区。
+每次提交先要 git add 然后  git commit
