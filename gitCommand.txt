@@ -42,7 +42,8 @@ git reset HEAD file   可以把暂存区的修改撤销掉（unstage），重新放回工作区
 
 
 
-远程仓库 创建SSH key
-$ ssh-keygen -t rsa -C "youremail@example.com"
+要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
 
 为什么GitHub需要SSH Key呢？因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。
