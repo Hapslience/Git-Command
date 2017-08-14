@@ -37,4 +37,12 @@ git 命令确认删除　git rm <file>  git commit
 git checkout -- readme.txt	 还没有存到暂存区，就是让这个文件回到最近一次	git commit或git add时的状态。
 git reset HEAD file   可以把暂存区的修改撤销掉（unstage），重新放回工作区
 
-通俗点说：撤销工作区的修改 checkout --readme.txt  撤销暂存区的修改 git reset head file
+通俗点说：撤销工作区的修改 checkout --readme.txt  撤销暂存区的修改 git reset head <file>
+
+
+
+
+远程仓库 创建SSH key
+$ ssh-keygen -t rsa -C "youremail@example.com"
+
+为什么GitHub需要SSH Key呢？因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。
